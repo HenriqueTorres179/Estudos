@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Equações do Segundo Grau</title>
+  </head>
+  <body>
+    <form id="form-equacao">
+      <div class="campo">
+        <label for="coef-a">Coeficiente a:</label>
+        <input
+          type="number"
+          id="coef-a"
+          step="any"
+          required
+          placeholder="Ex: 1"
+        />
+      </div>
+
+      <div class="campo">
+        <label for="coef-b">Coeficiente b:</label>
+        <input
+          type="number"
+          id="coef-b"
+          step="any"
+          required
+          placeholder="Ex: -5"
+        />
+      </div>
+
+      <div class="campo">
+        <label for="coef-c">Coeficiente c:</label>
+        <input
+          type="number"
+          id="coef-c"
+          step="any"
+          required
+          placeholder="Ex: 6"
+        />
+      </div>
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <!-- Elemento para exibir o resultado na tela -->
+     <div id="delta">O delta será exibido aqui...</div>
+    <div id="resultado">O resultado será exibido aqui...</div>
+  </body>
+  <script src="script.js"></script>
+</html>
